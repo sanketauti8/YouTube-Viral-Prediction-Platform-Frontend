@@ -74,7 +74,7 @@ export default function YouTubeViralPredictor() {
         <h1>YouTube Viral Video Predictor</h1>
         <p className="subtext">
           Powered by <strong>XGBoost</strong>, this tool predicts whether a YouTube video will go viral using public
-          metadata like likes, comments, and publish time. Perfect for content creators &amp; recruiters evaluating ML work.
+          metadata like likes, comments, and publish time. Perfect for content creators &amp; evaluating ML work.
         </p>
         <div className="footer-info">
           <p><strong>Model:</strong> XGBoost (Accuracy&nbsp;91%)</p>
