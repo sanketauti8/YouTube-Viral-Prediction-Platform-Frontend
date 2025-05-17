@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #e0e7ff, #ffffff);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #4f46e5;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.subtext {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+.result {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-info {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+}
+
+/* ---------- two-column (info + form) ---------- */
+.row-layout {
+  display: flex;
+  flex-wrap: wrap;           /* mobile friendly */
+  gap: 40px;
+  padding: 30px 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.info-panel {
+  max-width: 360px;
+  flex: 1 1 320px;
+}
+
+.form-panel {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  max-width: 440px;
+  width: 100%;
+  flex: 1 1 320px;
+}
+
+/* ---------- collapsible “Advanced” section ---------- */
+details.advanced summary {
+  cursor: pointer;
+  font-size: 14px;
+  margin: 8px 0;
+  color: #4f46e5;
+}
+details.advanced[open] summary {
+  margin-bottom: 6px;
+}
+
+/* ---------- buttons ---------- */
+button.secondary {
+  background: #eef2ff;
+  color: #4f46e5;
+  margin-top: 8px;
+}
+button.secondary:hover {
+  background: #dcdffd;
+}
+
+/* ---------- result badge ---------- */
+.result-badge {
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+.result-badge.viral {
+  background: #dcfce7;
+  color: #166534;
+}
+.result-badge.not-viral {
+  background: #fef9c3;
+  color: #92400e;
+}
+
+/* ---------- loading state ---------- */
+button[disabled] {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
